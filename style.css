@@ -1,0 +1,113 @@
+/* Custom Styles for Cozyys Landing Page */
+
+:root {
+    --primary-yellow: #ffc107;
+    --primary-dark: #212529;
+    --accent-orange: #fd7e14;
+    --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: #333333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.fw-black {
+    font-weight: 800;
+}
+
+.fw-extrabold {
+    font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 90vh;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #fffcf5 0%, #fff6e0 100%);
+}
+
+.hero-img {
+    max-height: 480px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    transition: transform 0.4s ease;
+}
+
+.hero-img:hover {
+    transform: scale(1.02);
+}
+
+.float-card {
+    animation: floatAnim 3s ease-in-out infinite;
+}
+
+@keyframes floatAnim {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Cards & Hover Effects */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+.menu-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Timer Display */
+.min-w-80 {
+    min-width: 75px;
+}
+
+/* Offcanvas Cart Customization */
+.offcanvas {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.cart-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Accordion Customization */
+.accordion-button:not(.collapsed) {
+    background-color: #fff8e6;
+    color: #212529;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(255, 193, 7, 0.5);
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding-top: 90px;
+    }
+    .display-4 {
+        font-size: 2.2rem;
+    }
+}

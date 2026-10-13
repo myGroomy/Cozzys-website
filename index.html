@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozzys - The Best Mac & Chees In The World</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar Minimalis -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-extrabold text-warning fs-3 d-flex align-items-center gap-2" href="#">
+                <span class="fs-2"></span> Cozyys<span class="text-dark">.</span>
+            </a>
+            <button class="btn btn-warning position-relative ms-auto fw-semibold rounded-pill px-3 py-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                <i class="bi bi-cart3 me-1"></i> Keranjang
+                <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-4 fw-black text-dark mb-3">Sensasi Keju Lumer yang Bikin Mood Langsung Naik!</h1>
+                    <p class="lead text-secondary mb-4">
+                        Makaroni panggang lembut berbalut saus keju cheddar rahasia berlimpah dan topping daging asap gurih. Disajikan hangat, melimpah, dan siap manjakan lidahmu.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#menu" class="btn btn-warning btn-lg fw-bold px-4 py-3 shadow-lg rounded-pill border-0">
+                            <i class="bi bi-bag-check-fill me-2"></i>Pesan Sekarang
+                        </a>
+                        <a href="#masalah-solusi" class="btn btn-outline-dark btn-lg fw-semibold px-4 py-3 rounded-pill">
+                            Lihat Menu
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=800&q=80" alt="Cozyys Mac and Cheese" class="img-fluid rounded-4 shadow-lg hero-img">
+                        <div class="card position-absolute bottom-0 start-0 m-3 p-3 bg-white shadow-lg border-0 rounded-3 d-none d-sm-flex align-items-center gap-3 float-card">
+                            <div class="bg-warning-subtle p-2 rounded-circle text-warning fs-3"></div>
+                            <div class="text-start">
+                                <h6 class="mb-0 fw-bold">100% Real Cheese</h6>
+                                <small class="text-muted">Melting goodness inside!</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Social Proof Awal -->
+    <section class="py-4 bg-white border-bottom border-top">
+        <div class="container">
+            <div class="row text-center gy-3 align-items-center">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <span class="text-warning fs-4"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                        <h5 class="fw-bold mb-0">4.9 / 5.0</h5>
+                    </div>
+                    <p class="text-muted small mb-0">Dari 2,500+ Review Pelanggan Setia</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-0"><i class="bi bi-shield-check text-success me-1"></i> 100% Premium Ingredients</h5>
+                    <p class="text-muted small mb-0">Keju Impor Pilihan & Tanpa Bahan Pengawet</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-0"><i class="bi bi-lightning-charge-fill text-warning me-1"></i> Freshly Baked Daily</h5>
+                    <p class="text-muted small mb-0">Dimasak Hangat Dadakan Tiap Pesanan Masuk</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Masalah & Solusi (The Hook) -->
+    <section id="masalah-solusi" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-warning fw-bold text-uppercase tracking-wider">Pernah Mengalami Ini?</span>
+                <h2 class="fw-extrabold text-dark mt-2">Lagi Ngidam Mac & Cheese Tapi Sering Kecewa?</h2>
+            </div>
+            <div class="row gy-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 text-center">
+                        <div class="fs-1 text-danger mb-3"><i class="bi bi-emoji-frown"></i></div>
+                        <h5 class="fw-bold">Kejunya Pelit & Encer</h5>
+                        <p class="text-muted small">Membeli Mac & Cheese tapi rasanya cuma kayak makaroni rebus bumbu instan cair tanpa tekstur creamy.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 text-center">
+                        <div class="fs-1 text-danger mb-3"><i class="bi bi-currency-dollar"></i></div>
+                        <h5 class="fw-bold">Harga Kemahalan</h5>
+                        <p class="text-muted small">Porsi sedikit di resto mahal, kantong jebol tapi perut masih keroncongan dan kurang puas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 text-center">
+                        <div class="fs-1 text-danger mb-3"><i class="bi bi-clock-history"></i></div>
+                        <h5 class="fw-bold">Bikin Sendiri Ribet</h5>
+                        <p class="text-muted small">Harus beli keju mahal, bikin saus béchamel rumit, belum lagi cuci piring dan loyang panggangnya.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solusi -->
+            <div class="bg-warning text-dark p-4 p-md-5 rounded-4 shadow-sm align-items-center">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mb-3 mb-lg-0">
+                        <span class="badge bg-dark text-warning px-3 py-2 rounded-pill mb-2 fw-bold">SOLUSINYA ADALAH COZYYS</span>
+                        <h3 class="fw-extrabold mb-2">Puasin Craving-mu Tanpa Ribet dengan Cozyys!</h3>
+                        <p class="mb-0 opacity-90">Cozyys hadir menyajikan Mac & Cheese authentic khas Western dengan limpahan saus keju cheddar rahasia, tekstur melty, dan topping premium yang ramah di kantong.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end text-center">
+                        <a href="#menu" class="btn btn-dark btn-lg fw-bold px-4 py-3 rounded-pill text-warning">Pilih Menu Cozyys</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Manfaat & Fitur / Menu Utama -->
+    <section id="menu" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-warning fw-bold text-uppercase">Menu Favorit Kami</span>
+                <h2 class="fw-extrabold text-dark mt-2">Pilih Mac & Cheese Favoritmu</h2>
+                <p class="text-muted">Setiap porsi dibuat dengan bahan berkualitas dan dipanggang sempurna.</p>
+            </div>
+
+            <!-- List Menu Grid -->
+            <div class="row gy-4">
+                <!-- Menu Item 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-hover">
+                        <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80" class="card-img-top menu-img" alt="Classic Creamy Melt">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill px-2 py-1 small">BEST SELLER</span>
+                                <span class="fw-bold text-danger fs-5">Rp 28.000</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Classic Creamy Melt</h5>
+                            <p class="card-text text-muted small flex-grow-1">Makaroni lembut disiram racikan 3 jenis keju leleh khas Cozyys yang lumer dan creamy banget.</p>
+                            <button class="btn btn-outline-warning text-dark fw-bold rounded-pill w-100 btn-add-cart mt-3" data-id="1" data-name="Classic Creamy Melt" data-price="28000">
+                                <i class="bi bi-cart-plus me-1"></i> Tambah
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-hover">
+                        <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80" class="card-img-top menu-img" alt="Smoked Beef Supreme">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill px-2 py-1 small">FAVORITE</span>
+                                <span class="fw-bold text-danger fs-5">Rp 35.000</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Smoked Beef Supreme</h5>
+                            <p class="card-text text-muted small flex-grow-1">Perpaduan Mac & Cheese creamy dengan potongan daging sapi asap beraroma smoky yang gurih memanjakan.</p>
+                            <button class="btn btn-outline-warning text-dark fw-bold rounded-pill w-100 btn-add-cart mt-3" data-id="2" data-name="Smoked Beef Supreme" data-price="35000">
+                                <i class="bi bi-cart-plus me-1"></i> Tambah
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-hover">
+                        <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80" class="card-img-top menu-img" alt="Spicy Lava Volcano">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-danger text-white rounded-pill px-2 py-1 small">PEDAS 🔥</span>
+                                <span class="fw-bold text-danger fs-5">Rp 32.000</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Spicy Lava Volcano</h5>
+                            <p class="card-text text-muted small flex-grow-1">Untuk pecinta pedas! Mac & Cheese dengan campuran saus cabai spesial dan taburan cabe bubuk melimpah.</p>
+                            <button class="btn btn-outline-warning text-dark fw-bold rounded-pill w-100 btn-add-cart mt-3" data-id="3" data-name="Spicy Lava Volcano" data-price="32000">
+                                <i class="bi bi-cart-plus me-1"></i> Tambah
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-hover">
+                        <img src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=600&q=80" class="card-img-top menu-img" alt="Truffle Mushroom Deluxe">
+                        <div class="card-body d-flex flex-column p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-dark text-warning rounded-pill px-2 py-1 small">PREMIUM</span>
+                                <span class="fw-bold text-danger fs-5">Rp 42.000</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Truffle Mushroom Deluxe</h5>
+                            <p class="card-text text-muted small flex-grow-1">Sensasi mewah aroma minyak truffle asli dipadukan dengan tumisan jamur segar dan saus keju lumer.</p>
+                            <button class="btn btn-outline-warning text-dark fw-bold rounded-pill w-100 btn-add-cart mt-3" data-id="4" data-name="Truffle Mushroom Deluxe" data-price="42000">
+                                <i class="bi bi-cart-plus me-1"></i> Tambah
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitur & Keunggulan -->
+    <section class="py-5 bg-light border-top border-bottom">
+        <div class="container py-3">
+            <div class="row gy-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <div class="fs-1 text-warning mb-2"><i class="bi bi-fire"></i></div>
+                        <h6 class="fw-bold mb-1">Served Piping Hot</h6>
+                        <small class="text-muted">Dikemas dalam aluminium foil tahan panas agar tetap hangat pas sampai.</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <div class="fs-1 text-warning mb-2"><i class="bi bi-award-fill"></i></div>
+                        <h6 class="fw-bold mb-1">Authentic Western Recipe</h6>
+                        <small class="text-muted">Resep racikan chef berpengalaman dengan cita rasa cheesy khas.</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <div class="fs-1 text-warning mb-2"><i class="bi bi-truck"></i></div>
+                        <h6 class="fw-bold mb-1">Pengiriman Cepat</h6>
+                        <small class="text-muted">Bisa dikirim via kurir instant (Gojek/Grab) langsung ke lokasi kamu.</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-3">
+                        <div class="fs-1 text-warning mb-2"><i class="bi bi-check-circle-fill"></i></div>
+                        <h6 class="fw-bold mb-1">100% Halal</h6>
+                        <small class="text-muted">Dibuat dari bahan-bahan yang tersertifikasi Halal & Higienis.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Social Proof Tambahan (Testimoni Pelanggan) -->
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-warning fw-bold text-uppercase">Apa Kata Mereka?</span>
+                <h2 class="fw-extrabold text-dark mt-2">Testimoni Jujur Pecinta Keju</h2>
+            </div>
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <div class="card border-0 bg-light p-4 rounded-4 h-100 shadow-sm">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-secondary italic mb-4">"Gila sih ini Mac & Cheese ter-creamy yang pernah aku coba di kota ini! Kejunya ga bikin enek, porsinya juga kenyang banget buat makan siang."</p>
+                        <div class="d-flex align-items-center gap-3 mt-auto">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Customer" class="rounded-circle" width="48" height="48">
+                            <div>
+                                <h6 class="fw-bold mb-0">Amanda Putri</h6>
+                                <small class="text-muted">Food Vlogger & Mahasiswi</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 bg-light p-4 rounded-4 h-100 shadow-sm">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-secondary italic mb-4">"Yang Smoked Beef Supreme parah enak banget! Aroma smoky-nya menyatu sempurna sama saus kejunya. Wajib pesan extra cheese!"</p>
+                        <div class="d-flex align-items-center gap-3 mt-auto">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Customer" class="rounded-circle" width="48" height="48">
+                            <div>
+                                <h6 class="fw-bold mb-0">Rian Pratama</h6>
+                                <small class="text-muted">Karyawan Swasta</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 bg-light p-4 rounded-4 h-100 shadow-sm">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="text-secondary italic mb-4">"Pesan via WhatsApp gampang banget, tinggal pilih dan checkout. Pas dateng masih hangat dan keju di bagian atasnya leleh berkerak estetik!"</p>
+                        <div class="d-flex align-items-center gap-3 mt-auto">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Customer" class="rounded-circle" width="48" height="48">
+                            <div>
+                                <h6 class="fw-bold mb-0">Siti Nurhaliza</h6>
+                                <small class="text-muted">IRT & Cheese Lover</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Penawaran & Urgensi (The Offer & Scarcity) -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container py-4">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-7">
+                    <span class="badge bg-warning text-dark fw-bold mb-3 px-3 py-2 rounded-pill">PROMO SPESIAL MINGGU INI 🎁</span>
+                    <h2 class="display-5 fw-extrabold mb-3 text-warning">Paket Combo Cozyys Cheese Feast!</h2>
+                    <p class="lead text-light mb-4">Beli 2 Porsi Mac & Cheese (Bebas Varian) GRATIS 1 Lemon Tea Segar + Free Topping Extra Cheese! Hemat hingga Rp 15.000.</p>
+                    
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="bg-secondary p-3 rounded-3 text-center min-w-80">
+                            <h4 id="timer-hours" class="fw-bold text-warning mb-0">02</h4>
+                            <small class="small text-uppercase">Jam</small>
+                        </div>
+                        <span class="fs-3 fw-bold text-warning">:</span>
+                        <div class="bg-secondary p-3 rounded-3 text-center min-w-80">
+                            <h4 id="timer-minutes" class="fw-bold text-warning mb-0">45</h4>
+                            <small class="small text-uppercase">Menit</small>
+                        </div>
+                        <span class="fs-3 fw-bold text-warning">:</span>
+                        <div class="bg-secondary p-3 rounded-3 text-center min-w-80">
+                            <h4 id="timer-seconds" class="fw-bold text-warning mb-0">30</h4>
+                            <small class="small text-uppercase">Detik</small>
+                        </div>
+                    </div>
+
+                    <p class="small text-warning-subtle mb-0"><i class="bi bi-info-circle me-1"></i> Garansi 100% Puas: Jika makanan sampai dalam kondisi dingin/rusak, kami ganti baru!</p>
+                </div>
+                <div class="col-lg-5 text-center text-lg-end">
+                    <a href="#menu" class="btn btn-warning btn-lg fw-bold px-5 py-3 shadow-lg rounded-pill fs-5">
+                        <i class="bi bi-cart-plus-fill me-2"></i> Klaim Promo Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FAQ (Frequently Asked Questions) -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-warning fw-bold text-uppercase">FAQ</span>
+                <h2 class="fw-extrabold text-dark mt-2">Pertanyaan yang Sering Diajukan</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion accordion-flush shadow-sm rounded-4 overflow-hidden" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Bagaimana cara memesan Mac & Cheese Cozyys?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Pilih menu favoritmu di landing page ini, klik tombol <strong>"Tambah"</strong> untuk memasukkan ke keranjang, lalu klik icon Keranjang di pojok kanan atas dan pilih <strong>"Checkout via WhatsApp"</strong>. Pesananmu akan otomatis terformat dan terkirim ke WhatsApp kami.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Apakah produk Cozyys tersertifikasi Halal?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Ya, 100% Halal. Kami menggunakan bahan baku keju halal terverifikasi, daging sapi asap berkualitas, dan tanpa bahan pengawet mau pun kandungan alkohol/non-halal.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Berapa lama estimasi pengiriman pesanan?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Waktu pemanggangan membutuhkan waktu sekitar 10-15 menit agar tetap fresh & hangat, setelah itu langsung dikirim via kurir instan (Gojek/GrabExpress). Estimasi total sampai di tempatmu sekitar 30-45 menit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Bagaimana jika saya ingin menghangatkan kembali Mac & Cheese?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Kemasan aluminium foil kami aman dipanaskan langsung di oven atau air fryer selama 3-5 menit pada suhu 180°C, atau dipindahkan ke piring microwave-safe selama 1-2 menit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Closing Section & CTA Akhir -->
+    <section class="py-5 bg-warning text-dark text-center">
+        <div class="container py-4">
+            <h2 class="display-5 fw-extrabold mb-3">Sudah Siap Memanjakan Lidahmu Hari Ini?</h2>
+            <p class="lead mb-4 mx-auto" style="max-width: 650px;">Jangan tunggu sampai kelaparan! Pesan Cozyys Mac & Cheese sekarang dan rasakan kelezatan keju lumer terbaik di setiap suapan.</p>
+            <a href="#menu" class="btn btn-dark btn-lg fw-bold px-5 py-3 rounded-pill shadow-lg text-warning fs-5">
+                <i class="bi bi-cart-fill me-2"></i> Pesan Sekarang Juga
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Minimalis -->
+    <footer class="bg-dark text-white-50 py-4 border-top border-secondary">
+        <div class="container">
+            <div class="row align-items-center gy-3 text-center text-md-start">
+                <div class="col-md-6">
+                    <h4 class="fw-bold text-warning mb-1">Cozyys.</h4>
+                    <p class="small mb-0">Creamiest Mac & Cheese in Town. All Rights Reserved &copy; 2026.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none small me-3">Kebijakan Privasi</a>
+                    <a href="#" class="text-white-50 text-decoration-none small me-3">Syarat & Ketentuan</a>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="text-warning text-decoration-none small"><i class="bi bi-whatsapp me-1"></i> Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Offcanvas / Drawer Keranjang Belanja -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header border-bottom bg-light">
+            <h5 class="offcanvas-title fw-bold" id="cartOffcanvasLabel">
+                <i class="bi bi-bag-check text-warning me-2"></i>Keranjang Belanja
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <!-- List Item Cart -->
+            <div id="cart-items" class="flex-grow-1 overflow-auto mb-3">
+                <div id="empty-cart-msg" class="text-center text-muted py-5">
+                    <i class="bi bi-cart-x fs-1 opacity-50 mb-2 d-block"></i>
+                    Keranjangmu masih kosong.<br>Yuk pilih menu Mac & Cheese favoritmu!
+                </div>
+            </div>
+
+            <!-- Form Pemesanan & Summary -->
+            <div id="cart-summary-section" class="border-top pt-3 d-none">
+                <div class="mb-3">
+                    <label for="customer-name" class="form-label small fw-semibold">Nama Lengkap *</label>
+                    <input type="text" class="form-control form-control-sm" id="customer-name" placeholder="Masukkan nama kamu">
+                </div>
+                <div class="mb-3">
+                    <label for="customer-address" class="form-label small fw-semibold">Alamat Pengiriman *</label>
+                    <textarea class="form-control form-control-sm" id="customer-address" rows="2" placeholder="Jalan, No. Rumah, Patokan"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="customer-notes" class="form-label small fw-semibold">Catatan Khusus (Opsional)</label>
+                    <input type="text" class="form-control form-control-sm" id="customer-notes" placeholder="Misal: Sendok plastik, tidak pedas">
+                </div>
+
+                <div class="bg-light p-3 rounded-3 mb-3">
+                    <div class="d-flex justify-content-between mb-1 small">
+                        <span class="text-muted">Subtotal</span>
+                        <span id="cart-subtotal" class="fw-semibold">Rp 0</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-1 small">
+                        <span class="text-muted">Estimasi Ongkir</span>
+                        <span class="text-success fw-semibold">Dihitung di WA</span>
+                    </div>
+                    <hr class="my-2">
+                    <div class="d-flex justify-content-between">
+                        <span class="fw-bold">Total Porsi</span>
+                        <span id="cart-total-qty" class="fw-bold text-dark">0 pcs</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-1">
+                        <span class="fw-extrabold text-dark">Total Bayar</span>
+                        <span id="cart-total-price" class="fw-extrabold text-danger fs-5">Rp 0</span>
+                    </div>
+                </div>
+
+                <button id="btn-checkout-wa" class="btn btn-success btn-lg w-100 fw-bold rounded-pill shadow-sm">
+                    <i class="bi bi-whatsapp me-2"></i> Checkout via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
